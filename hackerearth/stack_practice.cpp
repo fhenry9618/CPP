@@ -16,6 +16,7 @@ void push (int stack[], int x, int n){
 	}
 }
 
+//Determines whether or not stack is empty
 bool isEmpty(){
 	if(top == -1)
 		return true;
