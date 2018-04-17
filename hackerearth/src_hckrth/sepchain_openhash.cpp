@@ -14,18 +14,13 @@ This hash function should return an integer from 0 to 19 when called upon.
 #include <vector>
 #include <ctime>
 
+#include "hashfunc_hdr.h"
+
 using namespace std;
 
 //Global vector we're using, as well as its size.
 vector <string> hashTable[20];
 int hashTableSize = 20;
-
-//Basic Hashing function
-int hashFunc(int N){
-	srand(time(NULL));
-	int randnum = rand() % N;
-	return randnum;
-}
 
 //Insertion function for strings
 void insert(string S){
